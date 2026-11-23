@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary & backup files
+*.bak
+*.tmp
+*.log
+
+# Agent session directories
+.claude/
+.codex/
+.gemini/
+.cursor/
