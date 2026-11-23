@@ -4,7 +4,7 @@
 
 本指南说明如何用仓库中的 PCB 文件与 [`hardware/BOM.csv`](../hardware/BOM.csv) 所列元件，组装一台完整的 **Arcade Manifold**（采购前建议先看 [README_CN.md](../README_CN.md#选料与替代说明) 中的替代型号与封装兼容提示）。
 
-> **关于配图**：下文实拍图来自早期圆孔面板批次；仓库提供的 2017 版面板 Gerber 已升级为 Eurorack 腰型安装槽孔与香蕉座防转双平边孔（`Ø 7.70 × 6.10 mm`），其余焊接与接线步骤完全相同。
+> **关于配图**：下文实拍图来自早期原厂圆孔面板批次（带有品牌标）；仓库公开的 2017 版结构 Gerber 已升级为 Eurorack 腰型安装槽孔与香蕉座防转双平边孔（`Ø 7.70 × 6.10 mm`），并移除了品牌与合规标识，其余焊接与接线步骤完全相同。
 
 ---
 
@@ -80,6 +80,6 @@
 
 ## 第七步：装入机箱或木盒
 
-用 M3 螺丝将模块安装进标准 **32HP Eurorack 机箱**，或装入可选的 **32HP 独立木盒**（图纸见 [`hardware/enclosure/AM_Box_32HP.ai`](../hardware/enclosure/AM_Box_32HP.ai)）。
+用 M3 螺丝将模块安装进标准 **32HP Eurorack 机箱**，或装入可选的 **32HP 独立木盒**（图纸见 [`hardware/enclosure/AM_Box_32HP.pdf`](../hardware/enclosure/AM_Box_32HP.pdf)）。
 
 ![装入 32HP 木盒后的成品效果](images/01-finished-module.jpg)

@@ -69,7 +69,7 @@ Arcade-Manifold/
     │   ├── AM Faceplate.lay6                 # Sprint-Layout 6 source file
     │   └── gerbers/                          # Extracted Gerber & drill files
     └── enclosure/
-        └── AM_Box_32HP.ai                    # 32HP wooden box drawing (Illustrator / PDF)
+        └── AM_Box_32HP.pdf                   # 32HP wooden box vector drawing (PDF, editable in Illustrator/Inkscape)
 ```
 
 ---
@@ -118,7 +118,7 @@ Because this design originated in 2014–2017, check the exact mechanical dimens
 
 ## PCB Fabrication Notes
 
-Both PCBs were designed in **Sprint-Layout 6** (`.lay6`). Ready-to-upload Gerber archives are included:
+Both PCBs were designed in **Sprint-Layout 6** (`.lay6`) and have had brand logos and compliance marks removed for open-source distribution. Ready-to-upload Gerber archives (including Excellon drill files) are included:
 
 - **Core PCB** — [`hardware/core/AM_Core_Gerbers.zip`](hardware/core/AM_Core_Gerbers.zip)
   - Dimensions: `80.96 × 22.86 mm`, 2-layer, 1.6 mm FR4
@@ -126,7 +126,7 @@ Both PCBs were designed in **Sprint-Layout 6** (`.lay6`). Ready-to-upload Gerber
 - **Faceplate PCB** — [`hardware/faceplate/AM_Faceplate_Gerbers.zip`](hardware/faceplate/AM_Faceplate_Gerbers.zip)
   - Dimensions: `162.5 × 128.7 mm` (32HP × 3U), 2-layer, 1.6 mm FR4
   - Quantity needed: **1 per unit**
-  - Finish: Front legends (**出 / 入 / 门 / 力** and lotus emblem) and jack rings are exposed copper through solder-mask openings — **blue solder mask** with **HASL or ENIG** matches the original module.
+  - Finish: Front legends (**出 / 入 / 门 / 力**) and jack rings are exposed copper through solder-mask openings — **blue solder mask** with **HASL or ENIG** matches the original module.
   - Mechanical details: Includes 4 slotted Eurorack mounting holes (`5.2 × 3.2 mm`) and 9 double-D anti-rotation cutouts (`Ø 7.70 × 6.10 mm`).
 
 ---
@@ -139,20 +139,20 @@ See the step-by-step illustrated build instructions in **[`docs/diy-guide.md`](d
 
 ## Optional 32HP Wooden Enclosure
 
-Source drawing: [`hardware/enclosure/AM_Box_32HP.ai`](hardware/enclosure/AM_Box_32HP.ai) *(Adobe Illustrator file with an embedded PDF stream — can be opened directly in standard PDF viewers)*.
+Vector drawing: [`hardware/enclosure/AM_Box_32HP.pdf`](hardware/enclosure/AM_Box_32HP.pdf) *(clean vector PDF — opens directly in PDF viewers, Adobe Illustrator, Inkscape, or CAD/CAM tools)*.
 
 ![32HP wooden enclosure drawing](docs/images/05-enclosure-drawing.png)
 
-> **Drawing note:** The file contains two box designs on one sheet. **Use the top drawing (`183 × 149 × 52 mm`)** for Arcade Manifold. The bottom `173 mm` box with side cutouts belongs to a separate 30HP module and should be ignored.
-
-**32HP box dimensions (top drawing):**
+**32HP box dimensions:**
 - Outer dimensions: `183 × 149 × 52 mm` (open-top 5-sided box)
 - Inner opening: `163 × 129 mm`, internal depth `42 mm`
-- Wall thickness: `10 mm` charred radiata pine sides + `10 mm` laminated bottom panel (with engraved lotus emblem on the underside)
+- Wall thickness: `10 mm` charred radiata pine sides + `10 mm` laminated bottom panel
 - Inner mounting rails (green): `8 mm` thick × `40 mm` tall (`2 mm` below the outer rim so the faceplate sits flush)
 
 ---
 
-## License
+## License & Branding Policy
 
-Released under the [MIT License](LICENSE). Build and use these hardware files at your own risk.
+The hardware designs, Gerber files, and documentation in this repository are released under the [MIT License](LICENSE). Build and use these files at your own risk.
+
+**Trademark & branding:** The MIT License covers the technical design only and does **not** grant trademark rights. All brand marks (the lotus logo, `孟` emblem, and factory `RoHS`/`WEEE` markings) have been removed from the public PCB and enclosure files. If you manufacture, sell, or distribute builds or kits based on this design, please use your own brand identity and **do not** place the **Meng Qi / MengQiMusic** name, lotus logo, or `孟` mark on third-party hardware. Attribution in documentation or product listings (e.g., *"Based on Arcade Manifold by Meng Qi"*) is welcome.

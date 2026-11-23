@@ -69,7 +69,7 @@ Arcade-Manifold/
     │   ├── AM Faceplate.lay6                 # Sprint-Layout 6 源文件
     │   └── gerbers/                          # 解压后的 Gerber 与钻孔文件
     └── enclosure/
-        └── AM_Box_32HP.ai                    # 32HP 木盒加工图纸（Illustrator / PDF）
+        └── AM_Box_32HP.pdf                   # 32HP 木盒矢量加工图纸（PDF，可用 Illustrator/Inkscape 编辑）
 ```
 
 ---
@@ -118,7 +118,7 @@ Arcade-Manifold/
 
 ## PCB 打样说明
 
-两块电路板均使用 **Sprint-Layout 6**（`.lay6`）绘制，仓库内已准备好可直接上传板厂的 Gerber 压缩包：
+两块电路板均使用 **Sprint-Layout 6**（`.lay6`）绘制，公开版本已移除个人品牌 Logo 与原厂合规标识，仓库内已提供包含 Excellon 钻孔文件、可直接上传板厂的 Gerber 压缩包：
 
 - **Core PCB** — [`hardware/core/AM_Core_Gerbers.zip`](hardware/core/AM_Core_Gerbers.zip)
   - 尺寸：`80.96 × 22.86 mm`，双层板，板厚 `1.6 mm` FR4
@@ -126,7 +126,7 @@ Arcade-Manifold/
 - **Faceplate PCB** — [`hardware/faceplate/AM_Faceplate_Gerbers.zip`](hardware/faceplate/AM_Faceplate_Gerbers.zip)
   - 尺寸：`162.5 × 128.7 mm`（32HP × 3U），双层板，板厚 `1.6 mm` FR4
   - 需求数量：**每台 1 块**
-  - 工艺：正面字符（**出 / 入 / 门 / 力**、莲花标）与孔位装饰环均采用阻焊开窗露铜设计，**蓝油 + 喷锡或沉金** 可还原原版视觉。
+  - 工艺：正面字符（**出 / 入 / 门 / 力**）与孔位装饰环均采用阻焊开窗露铜设计，**蓝油 + 喷锡或沉金** 可还原原版视觉。
   - 结构细节：四角采用 `5.2 × 3.2 mm` 标准 Eurorack 腰型安装槽孔，9 个香蕉座孔位带双平边防转铣槽（`Ø 7.70 × 6.10 mm`）。
 
 ---
@@ -139,20 +139,20 @@ Arcade-Manifold/
 
 ## 可选 32HP 木盒图纸
 
-加工源文件：[`hardware/enclosure/AM_Box_32HP.ai`](hardware/enclosure/AM_Box_32HP.ai)（内含完整 PDF 数据流，可直接用任意 PDF 阅读器打开查看矢量图）。
+矢量加工图纸：[`hardware/enclosure/AM_Box_32HP.pdf`](hardware/enclosure/AM_Box_32HP.pdf)（纯净矢量 PDF，可用任意 PDF 阅读器、Adobe Illustrator、Inkscape 或 CAD 工具直接打开编辑）。
 
 ![32HP 木盒加工图纸预览](docs/images/05-enclosure-drawing.png)
 
-> **图纸注意**：画板里上下共画了两个木盒，**制作 Arcade Manifold 请看上方 `183 × 149 × 52 mm` 的图纸**。下方 `173 mm` 带侧面圆孔的盒子属于另一款 30HP 模块，请直接忽略。
-
-**32HP 木盒参数（上方图纸）：**
+**32HP 木盒参数：**
 - 外径：`183 × 149 × 52 mm`（无盖 5 面盒）
 - 内径：`163 × 129 mm`，内深 `42 mm`
-- 板材与工艺：四周为 `10 mm` 厚辐射松、底板为 `10 mm` 集成材（底面雕刻莲花标），表面深度碳化
+- 板材与工艺：四周为 `10 mm` 厚辐射松、底板为 `10 mm` 集成材，表面深度碳化
 - 内侧安装支条（图中绿色）：厚 `8 mm`、高 `40 mm`（比盒口低 `2 mm`，拧上面板后恰好与盒沿齐平）
 
 ---
 
-## 开源协议
+## 开源协议与品牌声明
 
-本项目基于 [MIT License](LICENSE) 开源。请自行评估并承担制作与使用这些硬件文件的风险。
+本仓库中的硬件设计、Gerber 与文档基于 [MIT License](LICENSE) 开源。请自行评估并承担制作与使用这些硬件文件的风险。
+
+**商标与品牌边界**：MIT 协议仅授权电路与结构设计本身，**不授予商标使用权**。仓库中公开发布的 PCB 与木盒图纸已移除莲花 Logo、「孟」字印章及原厂 `RoHS`/`WEEE` 标识。任何基于本设计进行的第三方制造、套件或成品销售，请使用制造者自己的品牌标识，**不得**在硬件本体或面板上使用 **Meng Qi / MengQiMusic** 名称、莲花 Logo 或「孟」字印章；欢迎在文字说明或商品介绍中注明设计出处（例如 *"Based on Arcade Manifold by Meng Qi"*）。

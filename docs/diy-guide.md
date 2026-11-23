@@ -4,7 +4,7 @@
 
 This guide covers assembling one **Arcade Manifold** module from the PCBs and parts listed in [`hardware/BOM.csv`](../hardware/BOM.csv) (see the main [README](../README.md#sourcing--compatibility-notes) for part substitution and mechanical compatibility notes before ordering).
 
-> **Note on photos:** The build photos below show an earlier faceplate batch with round corner mounting holes. The Gerber files in this repository use the updated 2017 faceplate with slotted Eurorack mounting holes and double-D anti-rotation cutouts (`Ø 7.70 × 6.10 mm`) for the banana jacks — all assembly and wiring steps are identical.
+> **Note on photos:** The build photos below show an earlier original-factory faceplate batch with round corner mounting holes and brand markings. The public Gerber files in this repository use the updated 2017 mechanical layout (slotted Eurorack mounting holes and `Ø 7.70 × 6.10 mm` double-D banana cutouts) with brand logos and compliance marks removed — all assembly and wiring steps are identical.
 
 ---
 
@@ -81,6 +81,6 @@ Before patching into your system, do a quick passive resistance check with a mul
 
 ## Step 7 — Install into Case
 
-Mount the finished module into a standard **32HP Eurorack case** using M3 screws, or fasten it into the optional **32HP wooden box** ([`hardware/enclosure/AM_Box_32HP.ai`](../hardware/enclosure/AM_Box_32HP.ai)).
+Mount the finished module into a standard **32HP Eurorack case** using M3 screws, or fasten it into the optional **32HP wooden box** ([`hardware/enclosure/AM_Box_32HP.pdf`](../hardware/enclosure/AM_Box_32HP.pdf)).
 
 ![Finished Arcade Manifold installed in its 32HP wooden box](images/01-finished-module.jpg)
