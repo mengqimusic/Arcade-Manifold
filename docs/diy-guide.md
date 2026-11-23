@@ -4,7 +4,7 @@
 
 This guide covers assembling one **Arcade Manifold** module from the PCBs and parts listed in [`hardware/BOM.csv`](../hardware/BOM.csv) (see the main [README](../README.md#sourcing--compatibility-notes) for part substitution and mechanical compatibility notes before ordering).
 
-> **Note on photos:** The build photos below show an earlier original-factory faceplate batch with round corner mounting holes and brand markings. The public Gerber files in this repository use the updated 2017 mechanical layout (slotted Eurorack mounting holes and `Ø 7.70 × 6.10 mm` double-D banana cutouts) with brand logos and compliance marks removed — all assembly and wiring steps are identical.
+> **Note on photos:** The build photos below show an earlier original-factory faceplate batch with round corner mounting holes and brand markings. The public Gerber files in this repository use the updated 2017 mechanical layout (slotted Eurorack mounting holes and `Ø 7.70 × 6.10 mm` double-D banana cutouts) without brand marks — all assembly and wiring steps are identical.
 
 ---
 

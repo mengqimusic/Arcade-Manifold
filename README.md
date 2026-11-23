@@ -118,7 +118,7 @@ Because this design originated in 2014–2017, check the exact mechanical dimens
 
 ## PCB Fabrication Notes
 
-Both PCBs were designed in **Sprint-Layout 6** (`.lay6`) and have had brand logos and compliance marks removed for open-source distribution. Ready-to-upload Gerber archives (including Excellon drill files) are included:
+Both PCBs were designed in **Sprint-Layout 6** (`.lay6`). Ready-to-upload Gerber archives (including Excellon drill files) are included:
 
 - **Core PCB** — [`hardware/core/AM_Core_Gerbers.zip`](hardware/core/AM_Core_Gerbers.zip)
   - Dimensions: `80.96 × 22.86 mm`, 2-layer, 1.6 mm FR4
@@ -155,4 +155,4 @@ Vector drawing: [`hardware/enclosure/AM_Box_32HP.pdf`](hardware/enclosure/AM_Box
 
 The hardware designs, Gerber files, and documentation in this repository are released under the [MIT License](LICENSE). Build and use these files at your own risk.
 
-**Trademark & branding:** The MIT License covers the technical design only and does **not** grant trademark rights. All brand marks (the lotus logo, `孟` emblem, and factory `RoHS`/`WEEE` markings) have been removed from the public PCB and enclosure files. If you manufacture, sell, or distribute builds or kits based on this design, please use your own brand identity and **do not** place the **Meng Qi / MengQiMusic** name, lotus logo, or `孟` mark on third-party hardware. Attribution in documentation or product listings (e.g., *"Based on Arcade Manifold by Meng Qi"*) is welcome.
+**Trademark & branding:** The MIT License covers the technical design only and does **not** grant trademark rights. The public PCB and enclosure files do not include brand marks. If you manufacture, sell, or distribute builds or kits based on this design, please use your own brand identity and **do not** place the **Meng Qi / MengQiMusic** name, lotus logo, or `孟` mark on third-party hardware. Attribution in documentation or product listings (e.g., *"Based on Arcade Manifold by Meng Qi"*) is welcome.

@@ -118,7 +118,7 @@ Arcade-Manifold/
 
 ## PCB 打样说明
 
-两块电路板均使用 **Sprint-Layout 6**（`.lay6`）绘制，公开版本已移除个人品牌 Logo 与原厂合规标识，仓库内已提供包含 Excellon 钻孔文件、可直接上传板厂的 Gerber 压缩包：
+两块电路板均使用 **Sprint-Layout 6**（`.lay6`）绘制，仓库内已提供包含 Excellon 钻孔文件、可直接上传板厂的 Gerber 压缩包：
 
 - **Core PCB** — [`hardware/core/AM_Core_Gerbers.zip`](hardware/core/AM_Core_Gerbers.zip)
   - 尺寸：`80.96 × 22.86 mm`，双层板，板厚 `1.6 mm` FR4
@@ -155,4 +155,4 @@ Arcade-Manifold/
 
 本仓库中的硬件设计、Gerber 与文档基于 [MIT License](LICENSE) 开源。请自行评估并承担制作与使用这些硬件文件的风险。
 
-**商标与品牌边界**：MIT 协议仅授权电路与结构设计本身，**不授予商标使用权**。仓库中公开发布的 PCB 与木盒图纸已移除莲花 Logo、「孟」字印章及原厂 `RoHS`/`WEEE` 标识。任何基于本设计进行的第三方制造、套件或成品销售，请使用制造者自己的品牌标识，**不得**在硬件本体或面板上使用 **Meng Qi / MengQiMusic** 名称、莲花 Logo 或「孟」字印章；欢迎在文字说明或商品介绍中注明设计出处（例如 *"Based on Arcade Manifold by Meng Qi"*）。
+**商标与品牌边界**：MIT 协议仅授权电路与结构设计本身，**不授予商标使用权**。仓库中公开发布的 PCB 与木盒图纸不含个人品牌标识。任何基于本设计进行的第三方制造、套件或成品销售，请使用制造者自己的品牌标识，**不得**在硬件本体或面板上使用 **Meng Qi / MengQiMusic** 名称、莲花 Logo 或「孟」字印章；欢迎在文字说明或商品介绍中注明设计出处（例如 *"Based on Arcade Manifold by Meng Qi"*）。
