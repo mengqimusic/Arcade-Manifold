@@ -59,7 +59,7 @@ Arcade-Manifold/
 │   ├── diy-guide_CN.md                       # 中文 DIY 组装指南
 │   └── images/                               # 组装实拍图与木盒图纸预览
 └── hardware/
-    ├── BOM.csv                               # 完整元件清单（含替代型号与关键封装尺寸）
+    ├── BOM.csv                               # 元件清单
     ├── core/
     │   ├── AM_Core_Gerbers.zip               # Core PCB 打样 Gerber 压缩包（需 4 块）
     │   ├── Arcade Manifold.lay6              # Sprint-Layout 6 源文件
@@ -69,40 +69,39 @@ Arcade-Manifold/
     │   ├── AM Faceplate.lay6                 # Sprint-Layout 6 源文件
     │   └── gerbers/                          # 解压后的 Gerber 与钻孔文件
     └── enclosure/
-        └── AM_Box_32HP.pdf                   # 32HP 木盒矢量加工图纸（PDF，可用 Illustrator/Inkscape 编辑）
+        └── AM_Box_32HP.pdf                   # 32HP 木盒加工图纸
 ```
 
 ---
 
 ## 元件清单（BOM）
 
-完整表格文件（含替代料号与精确封装/开孔尺寸）：[`hardware/BOM.csv`](hardware/BOM.csv)
+完整表格（含替代料号与关键封装尺寸）：[`hardware/BOM.csv`](hardware/BOM.csv)
 
 | 元件 | 品牌 / 型号 | 数量 | 说明 |
 | :--- | :--- | :---: | :--- |
 | Core PCB（核心板） | 定制（`AM Core`） | 4 | 80.96 × 22.86 mm，双层，1.6 mm FR4（每通道 1 块） |
 | Faceplate PCB（面板） | 定制（`AM Faceplate`） | 1 | 162.5 × 128.7 mm（32HP × 3U），双层，1.6 mm FR4 |
-| 5.1 kΩ 贴片电阻（1206） | 通用（`5K1 1206`） | 12 | 每块 Core PCB 3 处焊盘全部焊 5.1 kΩ（4 × 3 = 12） |
+| 5.1 kΩ 贴片电阻（1206） | 通用（`5K1 1206`） | 12 | 每块 Core PCB 3 颗 |
 | 24 mm 街机按钮 | **SANWA** `OBSF-24` | 4 | 卡扣式安装，每通道 1 颗 |
 | 迷你 DPDT 拨动开关（ON-ON） | **德利威（Dailywell）** `2MD1T2B2M7QE` | 4 | `M7` 垂直弯脚直插，每通道 1 颗 |
-| 6.35 mm 全开关卧式 PCB 母座 | [**REAN**](https://www.rean-connectors.com.cn/?p=1505)（Neutrik）`NYS215` | 8 | 每块 Core PCB 2 个；原甬声 `YS-215A` 的现行替代型号 |
+| 6.35 mm 全开关卧式 PCB 母座 | [**REAN**](https://www.rean-connectors.com.cn/?p=1505)（Neutrik）`NYS215` | 8 | 每块 Core PCB 2 个（输入 / 输出） |
 | 3.5 mm 卧式 PCB 母座 | 通用 `PJ-313` | 8 | 5 脚卧式直插无螺母，每块 Core PCB 2 个 |
 | 4 mm 面板安装香蕉座 | **RCI** `R1-16A` | 9 | 8 个通道信号座（如蓝色）+ 1 个顶部中央接地座（如黑色） |
 | 裸铜线 / 镀锡单芯硬导线 | 通用 | 若干 | 线径约 0.5–0.8 mm，用于按钮、香蕉座与顶部接地座飞线 |
 | 32HP 木盒（可选） | 定制 | 1 | 若装入 Eurorack 机箱则无需木盒 |
 
-*可选配件*：可叠插 4 mm 香蕉跳线（原版成品附带 5 根），以及 4 颗 M3 面板固定螺丝（木盒版可用自攻木螺丝）。
+*可选配件*：可叠插 4 mm 香蕉跳线、4 颗 M3 面板固定螺丝（木盒版可用自攻木螺丝）。
 
 ---
 
 ## 选料与替代说明
 
-本设计最初定型于 2014–2017 年，采购机电件或寻找替代型号时请务必核对以下实测尺寸与约束：
+替换机电件前请核对以下实测尺寸与约束：
 
-- **6.35 mm 母座（`REAN NYS215`，原甬声 `YS-215A`）**：
-  - 宁波甬声（Yongsheng）已整体并入 Neutrik 旗下 **REAN** 品牌，[**REAN NYS215**](https://www.rean-connectors.com.cn/?p=1505)（镀铬金属螺母、全开关 TRS）即为当年 `YS-215A` 的现行在产型号。
+- **6.35 mm 母座（`REAN NYS215`）**：
   - **Core PCB 实测封装**：6 脚双列直插（`2 列 × 3 排`），左右列距 **`17.0 mm`**，前后排距 **`6.25 mm`**（总跨度 `12.50 mm`），前排脚距板边 `4.35 mm`，钻孔 `Ø 1.50 mm`，轴心距 PCB 高度 **`8.2 mm`**，面板开孔 `Ø 11.3 mm`。
-  - **可直接兼容替代**：`REAN NYS215`、`REAN NYS216` / `NYS216G`（塑料螺母版）、按上述尺寸筛选的通用 NYS215 兼容款（如 Tayda `A-7115`），或 4 脚单声道全开关版 `NYS2152` / `NYS2162`（Core PCB 中间两脚悬空，下单前请对照图纸确认前后跨度为 `12.5 mm`）。
+  - **可直接兼容替代**：`REAN NYS215`（镀铬金属螺母）、`REAN NYS216` / `NYS216G`（塑料螺母版）、按上述尺寸筛选的通用 NYS215 兼容款（如 Tayda `A-7115`），或 4 脚单声道全开关版 `NYS2152` / `NYS2162`（Core PCB 中间两脚悬空，下单前请对照图纸确认前后跨度为 `12.5 mm`）。
   - **明确不兼容（注意避坑）**：Neutrik `NMJ6HCD2` / `NMJ6HC-S`（横向约 `16.23 mm` 且纵向步进不同）、Neutrik `NRJ6HH` / `NRJ6HF`（窄体 Slim Jack）、Cliff S2/S4、Amphenol ACJS，均无法直插。
   - **电气要求**：输入端**必须使用带常闭开关（Switched）的插座**，不可换成 3 脚无开关版，否则 3.5 mm 输入会断路。
 - **3.5 mm 母座（`PJ-313`）**：
@@ -110,7 +109,7 @@ Arcade-Manifold/
 - **DPDT 拨动开关（`Dailywell 2MD1T2B2M7QE`）**：
   - 迷你 `M7` 垂直弯脚 ON-ON DPDT（脚距 `2.54 × 5.08 mm` + 前置定位脚，无螺纹平口套筒配 `Ø 5.5 mm` 面板孔）。同封装标准替代：**Taiway `200-MDP1-T2B2M7QE`**、**Salecom `2MD1-T2-B2-M7-Q-E`**。
 - **4 mm 香蕉座（`RCI R1-16A`）**：
-  - 2017 版面板开孔为 **双平边防转铣槽**：实测圆弧直径 **`Ø 7.70 mm`** × 双平边宽度 **`6.10 mm`**。海外常见的美标 **Cinch Johnson `108-09xx`** 系列（`Ø 8.33 mm`）**不扩孔装不进去**。
+  - 面板开孔为 **双平边防转铣槽**：实测圆弧直径 **`Ø 7.70 mm`** × 双平边宽度 **`6.10 mm`**。海外常见的美标 **Cinch Johnson `108-09xx`** 系列（`Ø 8.33 mm`）**不扩孔装不进去**。
 - **24 mm 街机按钮（`SANWA OBSF-24`）**：
   - 面板开孔 `Ø 24.2 mm`，兼容标准 24 mm 卡扣式街机按钮（如 Seimitsu `PS-14-DN`），但整体手感以 `SANWA OBSF-24` 为设计基准。
 
@@ -122,7 +121,7 @@ Arcade-Manifold/
 
 - **Core PCB** — [`hardware/core/AM_Core_Gerbers.zip`](hardware/core/AM_Core_Gerbers.zip)
   - 尺寸：`80.96 × 22.86 mm`，双层板，板厚 `1.6 mm` FR4
-  - 需求数量：**每台 4 块**（板厂常见起订量 5 片，刚好留 1 片备用）
+  - 需求数量：**每台 4 块**
 - **Faceplate PCB** — [`hardware/faceplate/AM_Faceplate_Gerbers.zip`](hardware/faceplate/AM_Faceplate_Gerbers.zip)
   - 尺寸：`162.5 × 128.7 mm`（32HP × 3U），双层板，板厚 `1.6 mm` FR4
   - 需求数量：**每台 1 块**
@@ -139,7 +138,7 @@ Arcade-Manifold/
 
 ## 可选 32HP 木盒图纸
 
-矢量加工图纸：[`hardware/enclosure/AM_Box_32HP.pdf`](hardware/enclosure/AM_Box_32HP.pdf)（纯净矢量 PDF，可用任意 PDF 阅读器、Adobe Illustrator、Inkscape 或 CAD 工具直接打开编辑）。
+矢量加工图纸：[`hardware/enclosure/AM_Box_32HP.pdf`](hardware/enclosure/AM_Box_32HP.pdf)
 
 ![32HP 木盒加工图纸预览](docs/images/05-enclosure-drawing.png)
 
@@ -155,4 +154,4 @@ Arcade-Manifold/
 
 本仓库中的硬件设计、Gerber 与文档基于 [MIT License](LICENSE) 开源。请自行评估并承担制作与使用这些硬件文件的风险。
 
-**商标与品牌边界**：MIT 协议仅授权电路与结构设计本身，**不授予商标使用权**。仓库中公开发布的 PCB 与木盒图纸不含个人品牌标识。任何基于本设计进行的第三方制造、套件或成品销售，请使用制造者自己的品牌标识，**不得**在硬件本体或面板上使用 **Meng Qi / MengQiMusic** 名称、莲花 Logo 或「孟」字印章；欢迎在文字说明或商品介绍中注明设计出处（例如 *"Based on Arcade Manifold by Meng Qi"*）。
+**商标与品牌边界**：MIT 协议仅授权电路与结构设计本身，**不授予商标使用权**。任何基于本设计进行的第三方制造、套件或成品销售，请使用制造者自己的品牌标识，**不得**在硬件本体或面板上使用 **Meng Qi / MengQiMusic** 名称、莲花 Logo 或「孟」字印章；欢迎在文字说明或商品介绍中注明设计出处（例如 *"Based on Arcade Manifold by Meng Qi"*）。

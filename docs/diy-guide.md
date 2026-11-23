@@ -2,9 +2,9 @@
 
 [English](diy-guide.md) | [中文](diy-guide_CN.md)
 
-This guide covers assembling one **Arcade Manifold** module from the PCBs and parts listed in [`hardware/BOM.csv`](../hardware/BOM.csv) (see the main [README](../README.md#sourcing--compatibility-notes) for part substitution and mechanical compatibility notes before ordering).
+This guide covers assembling one **Arcade Manifold** module from the PCBs and parts listed in [`hardware/BOM.csv`](../hardware/BOM.csv) (see the main [README](../README.md#sourcing--compatibility-notes) for part substitution and compatibility notes before ordering).
 
-> **Note on photos:** The build photos below show an earlier original-factory faceplate batch with round corner mounting holes and brand markings. The public Gerber files in this repository use the updated 2017 mechanical layout (slotted Eurorack mounting holes and `Ø 7.70 × 6.10 mm` double-D banana cutouts) without brand marks — all assembly and wiring steps are identical.
+> **Note on photos:** Build photos show an earlier faceplate (round mounting holes and factory logo). The Gerber files in this repository use slotted Eurorack holes without logos — assembly and wiring are identical.
 
 ---
 
@@ -12,10 +12,9 @@ This guide covers assembling one **Arcade Manifold** module from the PCBs and pa
 
 Each channel uses one Core PCB (`80.96 × 22.86 mm`). Repeat for all 4 boards:
 
-1. **Solder the three 5.1 kΩ (1206) SMD resistors** first while the board is flat.
-   - All **3** resistor footprints on each Core PCB take **5.1 kΩ** (12 resistors total across the 4 boards).
+1. **Solder the three 5.1 kΩ (1206) SMD resistors** first while the board is flat (12 resistors total across the 4 boards).
 2. **Place the through-hole hardware** on the silkscreen side of the Core PCB:
-   - 2× `REAN NYS215` (formerly `Yongsheng YS-215A`) switched 6.35 mm jacks *(verify switched/normalling tip contact for the input jack)*
+   - 2× `REAN NYS215` switched 6.35 mm jacks *(verify switched/normalling tip contact for the input jack)*
    - 2× `PJ-313` horizontal 5-pin 3.5 mm jacks (align the jack front with the arrow `↑` on the silkscreen)
    - 1× `Dailywell 2MD1T2B2M7QE` (or equivalent `M7` right-angle) DPDT toggle switch
 3. **Alignment tip:** Tack only one pin of each jack/switch first, or test-fit the Core PCB against the faceplate with the nuts finger-tight before soldering all remaining pins. This keeps all jacks and toggles square to the faceplate without mechanical stress.
